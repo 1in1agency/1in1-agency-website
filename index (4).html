@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>1IN1 Agency | Graphic Design, Social Media Design &amp; Offset Printing</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="1IN1 Agency offers graphic design, social media post design, offset printing and video ads for startups and ambitious brands.">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="canonical" href="https://1in1agency.github.io/1in1-agency-website/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0A'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%23C6FF1A'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="1IN1 Agency">
+<meta property="og:title" content="1IN1 Agency | We make brands impossible to ignore.">
+<meta property="og:description" content="Graphic design, social media posts, offset printing and video ads. Start a project with 1IN1.">
+<meta property="og:url" content="https://1in1agency.github.io/1in1-agency-website/">
+<meta property="og:image" content="https://1in1agency.github.io/1in1-agency-website/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"1IN1 Agency","url":"https://1in1agency.github.io/1in1-agency-website/","description":"Graphic design, social media post design, offset printing and video ads.","email":"1in1marketingagency@gmail.com","telephone":"+923707505278","sameAs":["https://instagram.com/1in1agency","https://facebook.com/1in1agency"]}</script>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===== TOKENS: edit colours, fonts and spacing here ===== */
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--ink:#0A0A0A;--line:#2a2a2a;--mute:#9b9b94;--lime:#C6FF1A;--p:clamp(20px,5vw,72px);--disp:"Bricolage Grotesque","Arial Black",Impact,sans-serif;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+body{background:var(--ink);color:#fff;font:400 clamp(16px,1.1vw,18px)/1.55 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}ul{list-style:none;padding:0}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+h1,h2,h3{font-family:var(--disp);font-weight:600;letter-spacing:-.03em;line-height:1.05}h1{font-weight:700;text-transform:uppercase;line-height:.95}
+h2{font-size:clamp(2rem,5vw,4.2rem)}
+section{padding:clamp(72px,11vw,160px) var(--p)}
+.wrap{max-width:1500px;margin:auto}
+.mute{color:var(--mute)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:1.05em 1.8em;background:var(--lime);color:var(--ink);border:2px solid var(--lime);border-radius:100px;font:600 .82rem/1 "Instrument Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:transparent;color:var(--lime)}
+.btn.ghost{background:transparent;color:#fff;border-color:#4a4a4a}.btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:calc(env(safe-area-inset-top,0px) + 14px) var(--p) 14px;transition:transform .35s,background .3s}
+.nav.solid{background:rgba(10,10,10,.94);border-bottom:1px solid var(--line)}.nav.hide{transform:translateY(-100%)}
+.logo{font:700 1.5rem/1 var(--disp);letter-spacing:-.04em;display:flex;align-items:center;gap:.25em;position:relative;z-index:2}
+.logo i{width:.42em;height:.42em;background:var(--lime);border-radius:50%}
+#menu{display:flex;align-items:center;gap:clamp(18px,2.4vw,40px);font-weight:500;font-size:.95rem}
+#menu a:not(.btn):hover{color:var(--lime)}
+#menu .btn{padding:.9em 1.4em;font-size:.75rem}
+#burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative;z-index:2}
+#burger span{position:absolute;left:10px;right:10px;height:2px;background:#fff;transition:transform .3s}
+#burger span:first-child{top:18px}#burger span:last-child{top:25px}
+.open #burger span:first-child{transform:translateY(3.5px) rotate(45deg)}.open #burger span:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+@media(max-width:900px){#burger{display:block}
+#menu{position:fixed;inset:0;background:var(--ink);flex-direction:column;justify-content:center;align-items:flex-start;padding:0 var(--p);gap:18px;font:600 clamp(1.8rem,8vw,2.8rem)/1.1 var(--disp);letter-spacing:-.02em;transform:translateY(-100%);visibility:hidden;transition:transform .5s cubic-bezier(.7,0,.2,1),visibility .5s}
+.open #menu{transform:none;visibility:visible}#menu .btn{font:600 .85rem/1 "Instrument Sans";margin-top:14px;padding:1.1em 1.8em;letter-spacing:.08em}}
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;gap:clamp(36px,6vw,80px);padding-top:130px;padding-bottom:clamp(36px,5vw,64px)}
+h1{font-size:11.5vw}
+@media(min-width:700px){h1{font-size:min(7.4vw,7.2rem)}}
+.ln{display:block;overflow:hidden;padding:.03em 0}
+.ln b{display:block;font-weight:inherit;transform:translateY(108%);animation:up 1s cubic-bezier(.16,1,.3,1) forwards;animation-delay:calc(var(--i)*.1s + .15s)}
+@keyframes up{to{transform:none}}
+.orb{display:inline-block;width:.7em;height:.7em;border:.07em solid var(--lime);border-radius:50%;background:linear-gradient(90deg,var(--lime) 50%,transparent 50%);margin-left:.16em}
+.hero-foot{display:flex;flex-wrap:wrap;gap:28px 60px;justify-content:space-between;align-items:flex-end;border-top:1px solid var(--line);padding-top:28px}
+.hero-foot p{max-width:38ch;color:var(--mute);font-size:1.1rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+/* marquee */
+.marq{overflow:hidden;border-block:1px solid var(--line);padding:22px 0;white-space:nowrap}
+.marq div{display:inline-flex;animation:mq 32s linear infinite}
+.marq span{font:600 clamp(1.3rem,2.8vw,2.4rem)/1 var(--disp);text-transform:uppercase;letter-spacing:0;color:var(--lime);padding-right:.6em;display:flex;align-items:center;gap:.6em}
+.marq span::after{content:"";width:.28em;height:.28em;background:#fff;flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* services */
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(40px,6vw,88px)}
+.head p{max-width:36ch;color:var(--mute)}
+.row{display:grid;grid-template-columns:1.2fr 1fr;gap:12px 40px;align-items:center;padding:clamp(22px,3vw,40px) clamp(0px,1vw,16px);border-top:1px solid var(--line);transition:background .3s,color .3s,padding .3s}
+.row:last-child{border-bottom:1px solid var(--line)}
+.row h3{font-size:clamp(1.4rem,3vw,2.4rem)}.row p{color:var(--mute);max-width:44ch;transition:color .3s}
+.row:hover{background:var(--lime);color:var(--ink);padding-inline:clamp(12px,2vw,28px)}.row:hover p{color:#222}
+@media(max-width:760px){.row{grid-template-columns:1fr}}
+/* why */
+.why h2{max-width:14ch;margin-bottom:clamp(48px,7vw,100px)}
+.pts{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(24px,5vw,80px)}
+.pts li{border-top:1px solid var(--line);padding:28px 0 clamp(28px,4vw,56px)}
+.pts h3{font-size:clamp(1.2rem,1.9vw,1.7rem);margin-bottom:14px}.pts p{color:var(--mute);max-width:40ch}
+@media(max-width:700px){.pts{grid-template-columns:1fr}}
+/* work */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.tabs button{font:600 .85rem/1 "Instrument Sans",sans-serif;padding:.95em 1.5em;border-radius:100px;background:none;color:#fff;border:2px solid #3a3a3a;cursor:pointer;transition:.25s}
+.tabs button:hover{border-color:var(--lime)}.tabs button[aria-selected=true]{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+#wl{max-width:70ch;margin-bottom:clamp(28px,4vw,52px)}
+.wg{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2.4vw,32px)}
+.wg li:first-child{grid-column:span 2}
+@media(min-width:900px){.wg{grid-template-columns:repeat(4,1fr)}.wg li:first-child{grid-row:span 2}}
+.wg svg,.wg img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:cover;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.wg li:hover svg,.wg li:hover img{transform:translateY(-6px) rotate(-1deg)}
+.cap{display:flex;justify-content:space-between;gap:12px;padding-top:14px;color:var(--mute);flex-wrap:wrap;font-size:.92rem}.cap b{color:#fff;font-weight:600}
+/* results */
+.res{background:#111}
+.rg{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px}
+.rg li{border-top:2px solid var(--lime);padding-top:20px}
+.num{font:700 clamp(2.6rem,5.5vw,4.6rem)/1 var(--disp);letter-spacing:-.04em;color:var(--lime);display:block}
+.rg p{color:var(--mute);margin-top:10px;max-width:22ch}
+@media(max-width:960px){.rg{grid-template-columns:repeat(2,1fr);gap:48px 24px}}@media(max-width:480px){.rg{grid-template-columns:1fr}}
+/* process */
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.st li{border-left:1px solid var(--line);padding:0 clamp(16px,2vw,32px) 24px}
+.st b{font:700 clamp(2.2rem,4vw,3.4rem)/1 var(--disp);color:var(--lime);letter-spacing:-.04em;display:block;margin-bottom:24px}
+.st h3{font-size:clamp(1.2rem,1.9vw,1.7rem);margin-bottom:12px}.st p{color:var(--mute)}
+@media(max-width:960px){.st{grid-template-columns:repeat(2,1fr);row-gap:48px}}@media(max-width:520px){.st{grid-template-columns:1fr}}
+/* clients */
+.cl{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.cl li{min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cl img{max-width:70%;max-height:52px;object-fit:contain}
+.cl span{font:600 1.05rem/1.2 var(--disp);letter-spacing:-.01em}
+@media(max-width:900px){.cl{grid-template-columns:repeat(3,1fr)}}@media(max-width:560px){.cl{grid-template-columns:repeat(2,1fr)}}
+/* about */
+.ab{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(32px,6vw,100px)}
+.ab p{font-size:clamp(1rem,1.3vw,1.15rem);line-height:1.4;margin-bottom:1.2em}.ab p:first-child{font-size:clamp(1.25rem,2vw,1.8rem);letter-spacing:-.02em;line-height:1.12;font-weight:500}
+@media(max-width:820px){.ab{grid-template-columns:1fr}}
+/* testimonials */
+.tm{border-top:1px solid var(--line)}
+#tq{font:400 clamp(1.3rem,2.8vw,2.3rem)/1.25 "Instrument Sans",sans-serif;letter-spacing:-.02em;max-width:30ch;min-height:5.5em;margin:0 0 32px}
+.fade{animation:fd .6s both}@keyframes fd{from{opacity:0;transform:translateY(14px)}}
+.tc{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.arr{display:flex;gap:10px;align-items:center}.arr button{width:52px;height:52px;border-radius:50%;background:none;border:2px solid #4a4a4a;color:#fff;font-size:1.2rem;cursor:pointer;transition:.25s}.arr button:hover{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+/* faq */
+.fq{max-width:980px;margin-left:auto}
+details{border-top:1px solid var(--line)}details:last-child{border-bottom:1px solid var(--line)}
+summary{list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:26px 0;cursor:pointer;font:600 clamp(1.05rem,1.6vw,1.35rem)/1.25 var(--disp);letter-spacing:-.01em}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:2rem;color:var(--lime);transition:transform .3s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--mute);padding:0 0 28px;max-width:60ch;animation:fd .4s}
+/* contact */
+.ct{background:var(--lime);color:var(--ink)}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,100px);align-items:start}
+.ct h2{font-size:clamp(2.1rem,5vw,4.2rem);margin-bottom:24px}.ct p{max-width:34ch;font-size:1.15rem}
+form{display:grid;gap:22px}
+label{display:grid;gap:6px;font-weight:600;font-size:.9rem}
+input,select,textarea{font:400 1.05rem/1.4 "Instrument Sans",sans-serif;color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--ink);padding:10px 0;border-radius:0;width:100%}
+textarea{resize:vertical;min-height:110px}input::placeholder,textarea::placeholder{color:#3a4a05}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:0;border-bottom-width:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.ct .btn{background:var(--ink);color:var(--lime);border-color:var(--ink);justify-self:start}.ct .btn:hover{background:transparent;color:var(--ink)}
+.hp{position:absolute;left:-9999px}
+#st2{font-weight:600;min-height:1.5em}
+@media(max-width:860px){.cg{grid-template-columns:1fr}}@media(max-width:480px){.two{grid-template-columns:1fr}}
+/* footer */
+footer{padding:clamp(48px,6vw,88px) var(--p) 24px;overflow:hidden}
+.fr{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
+.fr ul{display:grid;gap:8px}.fr a:hover{color:var(--lime)}
+.fw{font:700 clamp(4rem,20vw,18rem)/.8 var(--disp);letter-spacing:-.06em;margin:clamp(32px,5vw,64px) 0 24px -.04em;user-select:none}
+.fb{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--mute);font-size:.9rem;border-top:1px solid var(--line);padding-top:20px}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity .8s,transform .8s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.ln b{transform:none}}
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="1IN1 Agency home">1IN1<i></i></a>
+  <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a><a href="#faq">FAQ</a>
+    <a class="btn" href="#contact">Start a project</a>
+  </nav>
+</header>
+<main id="top">
+<section class="hero">
+  <h1 aria-label="We make brands impossible to ignore.">
+    <span class="ln" style="--i:0"><b>WE MAKE<i class="orb" id="orb"></i></b></span>
+    <span class="ln" style="--i:1"><b>BRANDS</b></span>
+    <span class="ln" style="--i:2"><b>IMPOSSIBLE</b></span>
+    <span class="ln" style="--i:3"><b>TO IGNORE.</b></span>
+  </h1>
+  <div class="hero-foot">
+    <p id="heroP"></p>
+    <div class="cta"><a class="btn" href="#contact">START A PROJECT</a><a class="btn ghost" href="#work">VIEW OUR WORK</a></div>
+  </div>
+</section>
+<div class="marq" aria-hidden="true"><div id="mq"></div></div>
+
+<section id="services"><div class="wrap">
+  <div class="head rv"><h2>What we do</h2><p>Four services, one team. Order one, or let us handle everything.</p></div>
+  <ul id="svc"></ul>
+</div></section>
+
+<section class="why" id="why"><div class="wrap">
+  <h2 class="rv">One team. One plan. One goal.</h2>
+  <ul class="pts" id="pts"></ul>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="head rv"><h2>Selected work</h2><p>Sample designs from every service. Tap a service to explore.</p></div>
+  <div class="tabs" id="tabs" role="tablist"></div><p class="mute" id="wl"></p><ul class="wg" id="wg"></ul>
+</div></section>
+
+<section class="res" id="results"><div class="wrap">
+  <div class="head rv"><h2>Results</h2><p>A few numbers we are proud of.</p></div>
+  <ul class="rg" id="rg"></ul>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <div class="head rv"><h2>How we work</h2><p>Four steps from first call to final delivery.</p></div>
+  <ol class="st" id="st" style="padding:0;list-style:none"></ol>
+</div></section>
+
+<section id="clients"><div class="wrap">
+  <div class="head rv"><h2>Our clients</h2><p>Brands that trust 1IN1 with their design, print and video.</p></div>
+  <ul class="cl" id="cl"></ul>
+</div></section>
+
+<section id="about"><div class="wrap ab">
+  <h2 class="rv">About 1IN1</h2>
+  <div class="rv"><p id="ab1"></p><p class="mute" id="ab2"></p><a class="btn ghost" href="#contact">Meet the team on a call</a></div>
+</div></section>
+
+<section class="tm" id="testimonials"><div class="wrap">
+  <blockquote id="tq" aria-live="polite"></blockquote>
+  <div class="tc"><p id="ta"></p>
+    <div class="arr"><span class="mute" id="tn"></span><button id="prev" aria-label="Previous testimonial">&larr;</button><button id="next" aria-label="Next testimonial">&rarr;</button></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="head rv"><h2>Questions</h2></div>
+  <div class="fq" id="fq"></div>
+</div></section>
+
+<section class="ct" id="contact"><div class="wrap cg">
+  <div class="rv"><h2>Tell us what you're building.</h2><p>Share a few details. A senior member of the team replies within one business day.</p></div>
+  <form id="form" novalidate>
+    <div class="two">
+      <label>Name<input name="name" autocomplete="name" placeholder="Your name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" placeholder="you@company.com" required></label>
+    </div>
+    <div class="two">
+      <label>Company<input name="company" autocomplete="organization" placeholder="Company or brand"></label>
+      <label>Service needed<select name="service"><option>Not sure yet</option><option>Graphic design</option><option>Social media post design</option><option>Offset printing</option><option>Video ads</option></select></label>
+    </div>
+    <label>Project details<textarea name="message" placeholder="What do you need designed or printed? Add quantities, sizes and deadlines if you have them." required></textarea></label>
+    <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit" id="send">Send project details</button>
+    <p id="st2" role="status"></p>
+  </form>
+</div></section>
+</main>
+
+<footer>
+  <div class="fr">
+    <div><p id="fmail"></p></div>
+    <ul id="fnav"></ul>
+    <ul id="fsoc"></ul>
+  </div>
+  <div class="fw" aria-hidden="true">1IN1</div>
+  <div class="fb"><span id="fc"></span><a href="#top">Back to top</a></div>
+</footer>
+
+<script>
+/* ===== EDIT YOUR CONTENT HERE (all copy, links and numbers live in this object) ===== */
+const C={
+  email:"1in1marketingagency@gmail.com",
+  phone:"0370-7505278",
+  wa:"923707505278", // WhatsApp number in international format (92 + number without the first 0), no dashes or +
+  formEndpoint:"", // Paste a Formspree / Web3Forms / your own POST URL to send leads to a backend. Empty = opens the visitor's email app.
+  hero:"1IN1 is a creative agency for startups and ambitious brands. Graphic design, social media post design, offset printing and video ads, all under one roof.",
+  marquee:["Graphic design","Social media posts","Offset printing","Video ads"],
+  services:[
+    {t:"Social media designing and handling",tab:"Social media",items:["Social media posts","creative designs","content planning","page handling","posting","captions","campaign creatives","Facebook and Instagram management"]},
+    {t:"Graphic designing",tab:"Graphics",items:["Logo design","business cards","brochures","flyers","posters","banners","social media graphics","company profiles","packaging designs","custom graphics"]},
+    {t:"Video ads",tab:"Video ads",items:["Promotional videos","social media video ads","product and service advertisements","reels","short-form videos","motion graphics","campaign videos"]},
+    {t:"Offset printing",tab:"Offset printing",items:["Business cards","brochures","flyers","letterheads","envelopes","posters","banners and printed materials","packaging and other printed materials"]}
+  ],
+  why:[
+    {t:"Design and print under one roof",d:"The same team designs your artwork and prints it, so what you approve is what you get."},
+    {t:"Senior designers on every project",d:"You talk to the people doing the work, not someone passing messages along."},
+    {t:"Made to fit your brand",d:"Every post, print piece and video follows one look, so your business stays recognisable everywhere."},
+    {t:"Clear timelines and pricing",d:"You get a quote and a delivery date upfront, with proofs to approve before anything goes to print."}
+  ],
+  // PLACEHOLDER projects: replace with real clients. s = shape (circle, tri, sq, half)
+  // SAMPLE DESIGNS drawn in code. s = service (0 social, 1 graphics, 2 video, 3 print), k = type (post, logo, card, poster, video, print),
+  // v = shape 0-4, c = [background, main, accent], x/y = text. To show a real design instead, add img:"works/name.jpg" to that item.
+  work:[
+    {s:0,t:"Product launch post",k:"post",v:0,c:["#C6FF1A","#0A0A0A","#4b5f00"],x:"NEW",y:"DROP"},
+    {s:0,t:"Sale carousel cover",k:"post",v:2,c:["#0A0A0A","#fff","#C6FF1A"],x:"THIS",y:"WEEK"},
+    {s:0,t:"Festival greeting",k:"post",v:3,c:["#3D5AFE","#fff","#FFC933"],x:"EID",y:"MUBARAK"},
+    {s:0,t:"Quote of the day",k:"post",v:4,c:["#f2f2ee","#0A0A0A","#FF5A36"],x:"KEEP",y:"MOVING"},
+    {s:0,t:"Campaign story",k:"post",v:1,c:["#FF5A36","#0A0A0A","#fff"],x:"JOIN",y:"US"},
+    {s:1,t:"Logo design",k:"logo",v:1,c:["#0A0A0A","#fff","#C6FF1A"],x:"northbeam"},
+    {s:1,t:"Brand mark",k:"logo",v:3,c:["#f2f2ee","#0A0A0A","#FF5A36"],x:"VOLT"},
+    {s:1,t:"Business cards",k:"card",v:2,c:["#1c1c1c","#f2f2ee","#C6FF1A"],x:"Amira Khan",y:"Founder"},
+    {s:1,t:"Event poster",k:"poster",v:4,c:["#FFC933","#0A0A0A","#FF5A36"],x:"LIVE",y:"MUSIC"},
+    {s:1,t:"Company profile",k:"print",v:0,c:["#0A0A0A","#fff","#C6FF1A"],x:"PROFILE",y:"2026"},
+    {s:2,t:"Promo video",k:"video",v:0,c:["#0A0A0A","#fff","#C6FF1A"],x:"PROMO",y:"0:15"},
+    {s:2,t:"Reel teaser",k:"video",v:2,c:["#7C4DFF","#fff","#C6FF1A"],x:"REEL",y:"0:09"},
+    {s:2,t:"Product ad",k:"video",v:4,c:["#f2f2ee","#0A0A0A","#FF5A36"],x:"AD",y:"0:20"},
+    {s:2,t:"Motion graphics",k:"video",v:3,c:["#0A0A0A","#C6FF1A","#fff"],x:"MOTION",y:"0:12"},
+    {s:2,t:"Campaign video",k:"video",v:1,c:["#FF5A36","#0A0A0A","#fff"],x:"CAMPAIGN",y:"0:30"},
+    {s:3,t:"Business cards",k:"card",v:0,c:["#C6FF1A","#0A0A0A","#fff"],x:"Sana Malik",y:"CEO"},
+    {s:3,t:"Brochures",k:"print",v:4,c:["#1c1c1c","#f2f2ee","#C6FF1A"],x:"BROCHURE",y:"Tri-fold"},
+    {s:3,t:"Flyers",k:"poster",v:0,c:["#3D5AFE","#fff","#FFC933"],x:"FLYER",y:"SALE"},
+    {s:3,t:"Letterheads",k:"print",v:2,c:["#f2f2ee","#0A0A0A","#FF5A36"],x:"LETTER",y:"Stationery"},
+    {s:3,t:"Posters and banners",k:"poster",v:3,c:["#0A0A0A","#C6FF1A","#fff"],x:"BIG",y:"BANNER"}
+  ],
+  // PLACEHOLDER numbers: replace with your real results. to = number, d = decimals, s = suffix
+  results:[
+    {to:500,d:0,s:"+",l:"social media posts designed"},
+    {to:100,d:0,s:"+",l:"print jobs delivered"},
+    {to:60,d:0,s:"+",l:"brands served"},
+    {to:48,d:0,s:" hrs",l:"typical turnaround for social designs"}
+  ],
+  process:[
+    {t:"Brief",d:"You tell us what you need designed or printed, and we agree on scope, price and deadline."},
+    {t:"Design",d:"We create concepts and refine them with your feedback."},
+    {t:"Proof",d:"You approve the final artwork and print proofs before anything goes to production."},
+    {t:"Deliver",d:"We deliver files, printed goods or finished videos on the agreed date."}
+  ],
+  about:["We're a small team of designers who make social media posts, brand graphics and print work look sharp.","1IN1 covers design, offset printing and video ads under one roof, so you get consistent quality and one team to call."],
+  // PLACEHOLDER testimonials: replace with real client quotes
+  testimonials:[
+    {q:"They understood our brand in one call and delivered a month of posts in a week. Our feed finally looks professional.",a:"Amira Khan",r:"Founder, Northbeam Coffee"},
+    {q:"Our brochures came back exactly as approved, with perfect colour. Design and printing from one team saved us days.",a:"Daniel Reyes",r:"Marketing Lead, Arc & Anchor"},
+    {q:"The video ad and new graphics gave our launch a much stronger look. Fast, sharp and easy to work with.",a:"Sana Malik",r:"CEO, Loop Finance"}
+  ],
+  faq:[
+    {q:"How much does a project cost?",a:"Social posts and graphic design are priced per design or as a monthly pack. Offset printing depends on quantity, paper and finish. Send us the details and we'll quote before we start."},
+    {q:"How quickly can we start?",a:"Most projects start within a few days of the first call. Social media designs are usually delivered within 48 hours."},
+    {q:"Do you handle both design and printing?",a:"Yes. We design the artwork and print it, so you deal with one team from concept to delivery."},
+    {q:"Is offset printing right for my job?",a:"Offset printing is best for larger runs where colour accuracy and cost per piece matter. Tell us what you need and we'll suggest the most cost-effective option."},
+    {q:"What do you need from us to begin?",a:"A short brief, your logo and brand colours if you have them, and any text or images you want included."}
+  ],
+  // CLIENTS: n = client name, logo = image path (upload the logo to your repo, e.g. "logos/acme.png"). Leave logo:"" to show only the name.
+  // The four below are PLACEHOLDERS: replace them with your real clients.
+  clients:[
+    {n:"Northbeam Coffee",logo:""},
+    {n:"Volt Fitness",logo:""},
+    {n:"Arc & Anchor",logo:""},
+    {n:"Loop Finance",logo:""}
+  ],
+  nav:[["Services","#services"],["Work","#work"],["Process","#process"],["Contact","#contact"]],
+  social:[["Instagram","https://instagram.com/1in1agency"],["Facebook","https://facebook.com/1in1agency"],["WhatsApp","https://wa.me/923707505278"]]
+};
+
+/* ===== RENDER (no need to edit below unless changing behaviour) ===== */
+const $=s=>document.querySelector(s),D=i=>`class="rv" style="--d:${i*.09}s"`;
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+$('#heroP').textContent=C.hero;
+$('#mq').innerHTML=[0,1].map(()=>C.marquee.map(m=>`<span>${m}</span>`).join('')).join('');
+$('#svc').innerHTML=C.services.map((s,i)=>`<li class="row rv"><h3>${s.t}</h3><p>${s.items.join(", ")}</p></li>`).join('');
+$('#pts').innerHTML=C.why.map((s,i)=>`<li ${D(i%2)}><h3>${s.t}</h3><p>${s.d}</p></li>`).join('');
+const X=(t,o,c='')=>`<${t} ${Object.entries(o).map(([k,v])=>`${k}="${v}"`).join(' ')}>${c}</${t}>`;
+const R=(x,y,w,h,f)=>X('rect',{x,y,width:w,height:h,fill:f}),O=(x,y,r,f)=>X('circle',{cx:x,cy:y,r,fill:f}),G=(d,x,y,c)=>X('g',{transform:`rotate(${d} ${x} ${y})`},c);
+const TX=(x,y,s,f,t,n='start')=>X('text',{x,y,'font-size':s,fill:f,'font-weight':700,'text-anchor':n,'font-family':'Bricolage Grotesque,Arial,sans-serif'},t);
+const S=(v,x,y,r,f,a)=>[O(x,y,r,f)+O(x+r/2,y-r/2,r*.45,a),
+ X('rect',{x:x-r*.8,y:y-r*.8,width:r*1.6,height:r*1.6,fill:f,transform:`rotate(45 ${x} ${y})`})+O(x,y,r*.4,a),
+ R(x-r,y-r,r*2,r*.55,f)+R(x-r,y-r*.27,r*1.4,r*.55,a)+R(x-r,y+r*.45,r*.8,r*.55,f),
+ X('circle',{cx:x,cy:y,r:r*.85,fill:'none',stroke:a,'stroke-width':r*.3})+O(x,y,r*.3,f),
+ X('path',{d:`M${x-r} ${y+r}L${x} ${y-r}L${x+r} ${y+r}Z`,fill:f})+X('path',{d:`M${x-r/2} ${y+r}a${r/2} ${r/2} 0 0 1 ${r} 0Z`,fill:a})][v%5];
+const K={
+ post:(v,[b,f,a],x,y)=>S(v,138,60,40,f,a)+TX(14,150,24,f,x)+TX(14,178,24,a,y),
+ logo:(v,[b,f,a],x)=>S(v,100,78,34,f,a)+TX(100,152,20,f,x,'middle'),
+ card:(v,[b,f,a],x,y)=>G(-8,90,85,R(30,50,110,66,a))+G(5,111,117,R(56,84,110,66,f)+S(v,80,117,13,b,a)+TX(100,114,10,b,x)+TX(100,127,8,b,y)),
+ poster:(v,[b,f,a],x,y)=>R(58,38,100,140,a)+R(50,30,100,140,f)+S(v,100,80,26,b,a)+TX(60,138,16,b,x)+TX(60,158,16,b,y),
+ video:(v,[b,f,a],x,y)=>R(16,40,168,96,f)+S(v,52,88,30,b,a)+O(118,88,20,a)+X('path',{d:'M111 76L131 88L111 100Z',fill:b})+R(16,152,168,4,'#333')+R(16,152,64,4,a)+TX(16,30,13,f,x)+TX(16,178,11,f,y),
+ print:(v,[b,f,a],x,y)=>R(18,44,50,112,f)+R(75,44,50,112,a)+R(132,44,50,112,f)+S(v,43,80,15,b,a)+TX(24,138,9,b,x)+R(82,54,36,36,b)+R(82,100,36,4,b)+R(82,110,28,4,b)+R(139,54,36,4,b)+R(139,64,28,4,b)+R(139,74,36,4,b)+TX(18,180,12,f,y)
+};
+const tabs=$('#tabs');
+tabs.innerHTML=C.services.map((s,i)=>`<button role="tab" data-i="${i}">${s.tab}</button>`).join('');
+const showW=i=>{tabs.querySelectorAll('button').forEach((b,j)=>b.setAttribute('aria-selected',j==i));$('#wl').textContent=C.services[i].items.join(', ');
+ $('#wg').innerHTML=C.work.filter(w=>w.s==i).map((w,j)=>`<li class="fade" style="animation-delay:${j*.07}s">${w.img?`<img src="${w.img}" alt="${w.t}" loading="lazy">`:`<svg viewBox="0 0 200 200" role="img" aria-label="${w.t}">${R(0,0,200,200,w.c[0])+K[w.k](w.v,w.c,w.x,w.y)}</svg>`}<div class="cap"><b>${w.t}</b><span>${C.services[i].tab}</span></div></li>`).join('')};
+tabs.onclick=ev=>{const b=ev.target.closest('button');if(b)showW(+b.dataset.i)};showW(0);
+$('#rg').innerHTML=C.results.map((r,i)=>`<li ${D(i)}><span class="num" data-to="${r.to}" data-d="${r.d}" data-s="${r.s}">${r.to.toFixed(r.d)+r.s}</span><p>${r.l}</p></li>`).join('');
+$('#st').innerHTML=C.process.map((p,i)=>`<li ${D(i)}><b>0${i+1}</b><h3>${p.t}</h3><p>${p.d}</p></li>`).join('');
+$('#ab1').textContent=C.about[0];$('#ab2').textContent=C.about[1];
+$('#fq').innerHTML=C.faq.map(f=>`<details name="faq"><summary>${f.q}</summary><p>${f.a}</p></details>`).join('');
+$('#fmail').innerHTML=`<a href="mailto:${C.email}">${C.email}</a><br><a href="tel:+${C.wa}">${C.phone}</a>`;
+$('#cl').innerHTML=C.clients.map((c,i)=>`<li ${D(i%4)}>${c.logo?`<img src="${c.logo}" alt="${c.n} logo" loading="lazy">`:''}<span>${c.n}</span></li>`).join('');
+$('#fnav').innerHTML=C.nav.map(n=>`<li><a href="${n[1]}">${n[0]}</a></li>`).join('');
+$('#fsoc').innerHTML=C.social.map(n=>`<li><a href="${n[1]}" target="_blank" rel="noopener">${n[0]}</a></li>`).join('');
+$('#fc').textContent=`© ${new Date().getFullYear()} 1IN1 Agency`;
+
+/* testimonials */
+let ti=0;const T=C.testimonials;
+const showT=()=>{const t=T[ti],q=$('#tq');q.classList.remove('fade');void q.offsetWidth;q.classList.add('fade');q.textContent='“'+t.q+'”';$('#ta').textContent=t.a+', '+t.r;$('#tn').textContent=(ti+1)+' / '+T.length};
+$('#prev').onclick=()=>{ti=(ti+T.length-1)%T.length;showT()};$('#next').onclick=()=>{ti=(ti+1)%T.length;showT()};showT();
+
+/* scroll reveal + counters */
+const count=el=>{const to=+el.dataset.to,d=+el.dataset.d,s=el.dataset.s,t0=performance.now();(function f(t){const p=Math.min((t-t0)/1500,1);el.textContent=(to*(1-Math.pow(1-p,3))).toFixed(d)+s;if(p<1)requestAnimationFrame(f)})(t0)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);const n=e.target.querySelector('.num');if(n&&!reduce)count(n)}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+/* nav: solid + hide on scroll down, orb spins with scroll */
+const nav=$('#nav'),orb=$('#orb');let ly=0;
+addEventListener('scroll',()=>{const y=scrollY;nav.classList.toggle('solid',y>40);nav.classList.toggle('hide',y>ly&&y>300&&!nav.classList.contains('open'));ly=y;if(!reduce)orb.style.transform=`rotate(${y*.3}deg)`},{passive:true});
+const bg=$('#burger'),setMenu=o=>{nav.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
+bg.onclick=()=>setMenu(!nav.classList.contains('open'));
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>setMenu(false));
+addEventListener('keydown',e=>e.key==='Escape'&&setMenu(false));
+
+/* contact form: posts to C.formEndpoint if set, otherwise opens an email draft */
+$('#form').onsubmit=async e=>{
+  e.preventDefault();const f=e.target,st=$('#st2'),btn=$('#send');
+  if(f.website.value)return;
+  if(!f.checkValidity()){f.reportValidity();return}
+  const d=Object.fromEntries(new FormData(f));delete d.website;
+  btn.disabled=true;btn.textContent='Sending...';st.textContent='';
+  try{
+    if(C.formEndpoint){
+      const r=await fetch(C.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(d)});
+      if(!r.ok)throw 0;
+      st.textContent='Thanks '+d.name.split(' ')[0]+'. We have your details and will reply within one business day.';f.reset();
+    }else{
+      const body=`Name: ${d.name}\nEmail: ${d.email}\nCompany: ${d.company||'-'}\nService: ${d.service}\n\n${d.message}`;
+      location.href=`mailto:${C.email}?subject=${encodeURIComponent('New project from '+d.name)}&body=${encodeURIComponent(body)}`;
+      st.textContent='Your email app should open with the details filled in. If it does not, write to '+C.email+'.';
+    }
+  }catch(_){st.textContent='Something went wrong. Please email us at '+C.email+'.'}
+  btn.disabled=false;btn.textContent='Send project details';
+};
+</script>
+</body>
+</html>
